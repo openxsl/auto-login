@@ -4,7 +4,7 @@
         <div class="J_OXMod oxmod-auto-login" ox-mod="auto-login">
             <xsl:if test="login/uid = '' or not(login/uid)">
             	<xsl:choose>
-            		<xsl:when test="env/domain = online">
+            		<xsl:when test="env/domain = 'online'">
             			<script>
 		            		location.href='http://login.openxsl.com/p/oauth2/authorize?autocomplete=1'
 		            	</script>
